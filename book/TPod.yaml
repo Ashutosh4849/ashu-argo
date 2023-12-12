@@ -2,9 +2,10 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: Tushar
+  namespace: test2
 spec:
-  containers:
   replicas: 2
+  containers:
   - name: nginx
     image: docker.io/library/nginx:latest
     ports:
